@@ -11,6 +11,7 @@ The humble beginnings of a library of scripts for scoring and producing in Reape
 	- [Markers](#markers)
 	- [Copy Timecode](#copy-timecode)
 	- [Toggle Empty TCP Items](#toggle-empty-tcp-items)
+	- [Reset TCP Height](#reset-tcp-height)
 	- [Move by Measure Left/Right](#move-by-measure-leftright)
 
 <!-- /MarkdownTOC -->
@@ -46,6 +47,12 @@ Copies the edit cursor's current SMPTE timecode to the clipboard.
 Toggles the visibility of all TCP tracks that do not have any child tracks or media items.  Created to quickly collapse big templates down to just the tracks that are in use in the current project.
 
 > This script is opinionated in that it ignores tracks with `FX` or `Separator` in the name, which are tracks only shown on the MCP in my template.
+
+### Reset TCP Height
+
+	knifeblock_reset_track_height.lua
+
+Sets the height of all TCP items to be the same, default height, which is usually the minimum height specified by the theme.  Used to collapse the entire Arrange view back to a default state.
 
 ### Move by Measure Left/Right
 
